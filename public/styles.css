@@ -1,0 +1,63 @@
+.card{
+    background-color: red;
+    height: 100%;
+   
+}
+.contenedor-noticias{
+    display: flex;
+    flex-wrap: wrap;
+    /* align-content: flex-end; */
+}
+
+.contenedor-noticias__video{
+    height: 300px;
+}
+
+/* TODO carosel */
+.carousel-contenedor{
+    height: 500px;
+    background-color: black;
+}
+
+.carousel-informacion{
+    margin-left: -15%;
+    margin-bottom: -2%;
+    background-color: rgba(255, 160, 122, 0.378); 
+    
+}
+
+
+.nav-contenedor{
+    background-color: rgb(255, 160, 122);
+    color:black;
+}
+
+.text-negro{ 
+    color:rgb(0, 0, 0);
+    font-size:25px;
+    font-size: "large";
+}
+
+.text-negro1{
+    display: inline-block;
+}
+
+.servicios-contenedor{
+    background-color: rgba(255, 160, 122, 0.378);
+}
+
+.nav-link:hover{
+    color:rgb(143, 91, 141);
+}
+
+.footer{
+    background-color: rgb(255, 160, 122);
+}
+
+.text-tamano{
+    font-size: 13px;
+}
+
+.text-negro2:hover{
+    color:rgb(143, 91, 141);
+}
