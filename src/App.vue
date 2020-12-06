@@ -1,30 +1,34 @@
 <template>
   <div id="app">
     <div class="container">
-      <div class="row d-flex align-self-start">
-        <div
-          class="col-sm-6 col-xs-12 col-lg-4"
-          v-for="(item, index) of servicios"
-          :key="index"
-        >
-          <page-services v-bind:service="item"></page-services>
+      <div id="services">
+        <h2 class="text-center">Servicios</h2>
+        <div class="row d-flex align-self-start">
+          <div
+            class="col-sm-6 col-xs-12 col-lg-4"
+            v-for="(item, index) of servicios"
+            :key="index"
+          >
+            <!-- TODO Sección 2: Servicios -->
+            <page-services v-bind:service="item"></page-services>
+          </div>
         </div>
       </div>
-
-      <div class="row justify-content-center mb-5">
-        <div class="col mt-5" v-for="(item, index) of team" :key="index">
-          <team-card v-bind:member="item"></team-card>
+      <br />
+      <div id="team">
+        <h2 class="text-center">Equipo 15</h2>
+        <!-- TODO sección 3: Team-Card -->
+        <div class="row justify-content-center mb-5">
+          <div class="col mt-5" v-for="(item, index) of team" :key="index">
+            <team-card v-bind:member="item"></team-card>
+          </div>
         </div>
       </div>
     </div>
-  <page-news v-bind:titulo="titulo"></page-news>
-
-
   </div>
 </template>
 
 <script>
-
 import PageServices from "./components/PageServices.vue";
 import TeamCard from "./components/TeamCard.vue";
 
@@ -33,7 +37,6 @@ export default {
   components: {
     PageServices,
     TeamCard,
-   
   },
   data() {
     return {
@@ -42,7 +45,8 @@ export default {
         {
           codigo: 1,
           nombre: "Hugo Gonzalez",
-          descripcion: "Tengo 29 años y soy licenciado en filología inglesa de la UNAL. Amo las historias por encima de cualquier cosa y mi gato es el que manda en la casa. La comida italiana es mi debilidad.",
+          descripcion:
+            "Tengo 29 años y soy licenciado en filología inglesa de la UNAL. Amo las historias por encima de cualquier cosa y mi gato es el que manda en la casa. La comida italiana es mi debilidad.",
           rol: "Scrum Team",
           image: "./img/hugo.jpeg",
         },
@@ -76,7 +80,7 @@ export default {
           descripcion:
             "Tengo 32 años y trabajo en Restaurante la cabra Asunción sede Medellin hace 1 año. Me gusta ir al pueblito paisa y mi comida favorita es el arroz con leche. ",
           rol: "Mesera",
-          image:"./img/lina.jpeg",
+          image: "./img/lina.jpeg",
         },
       ],
 
@@ -103,20 +107,15 @@ export default {
             "En esta temporada navideña, estamos ayudando a apoyar a Farmlink, una organización sin fines de lucro fundada por estudiantes universitarios para enviar productos agrícolas no vendidos a los bancos de alimentos para combatir el hambre. Tu pedido tiene un impacto cuando redondeas.",
           descripcion2:
             "Acercate a cualquier Restaurante la cabra Asunción y has tu aporte de alimentos en buen estado o puedes hacer giros directamente a la fundación hasta el 12 de enero del 2020",
-          image: '../src/img/fundacion.png',
+          image: "../src/img/fundacion.png",
         },
       ],
-   
-
-
     };
   },
 };
 </script>
 
 <style scoped>
-
-
 .container {
   width: 95%;
 }

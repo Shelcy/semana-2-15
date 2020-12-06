@@ -1,0 +1,14 @@
+.card{
+    background-color: red;
+    height: 100%;
+   
+}
+.contenedor-noticias{
+    display: flex;
+    flex-wrap: wrap;
+    /* align-content: flex-end; */
+}
+
+.contenedor-noticias__video{
+    height: 300px;
+}
