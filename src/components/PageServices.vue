@@ -3,17 +3,18 @@
     <!-- <div class="card bg-dark text-white"> -->
     <img
       class="card-img card-imagen"
-      :src="service.image"
+      v-bind:src="service.image"
       alt="Card image"
     />
     <div class="card-img-overlay">
-      <h1 class=" card-titulo text-center">{{ service.nombre }}</h1>
+      <h1 class="card-titulo text-center">{{ service.nombre }}</h1>
     </div>
     <p class="card-text p-2">{{ service.descripcion }}</p>
     <div class="card-footer border-secondary">
       <small class="text-muted">{{ service.descripcion2 }}</small>
     </div>
-    <button type="button" class="btn btn-primary mb-2">Más información</button>
+   
+    <a href="https://github.com" role="button" class="btn btn-primary mb-2"> Más información</a>
 
     <!-- </div> -->
   </div>
@@ -44,6 +45,8 @@ export default {
 }
 .card-imagen {
   opacity: initial;
+  width: 100%;
+  height: 200px;
 }
 
 .btn{

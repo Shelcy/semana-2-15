@@ -3,7 +3,7 @@
     <div class="d-flex justify-content-center p-2">
       <img
         class="card-image"
-        :src="member.image"
+        v-bind:src="member.image"
         alt="member.nombre"
         title="member.nombre"
       />
