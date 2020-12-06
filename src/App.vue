@@ -17,6 +17,9 @@
         </div>
       </div>
     </div>
+  <page-news v-bind:titulo="titulo"></page-news>
+
+
   </div>
 </template>
 
@@ -30,6 +33,7 @@ export default {
   components: {
     PageServices,
     TeamCard,
+   
   },
   data() {
     return {
@@ -102,6 +106,9 @@ export default {
           image: '../src/img/fundacion.png',
         },
       ],
+   
+
+
     };
   },
 };
