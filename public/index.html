@@ -14,6 +14,7 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 <style>
     
@@ -28,25 +29,24 @@
 
     <!--TODO Sección 1: Carrusel....Image and text -->
 
-    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark ">
-        <a class="navbar-brand " href="# ">
-            <img src="img/icon_rest.ico" width="30 " height="30
-" class="d-inline-block align-top " alt=" " loading="lazy "> Restaurante La Cabra Asunción
+    <nav class="navbar navbar-expand-lg sticky-top text-negro nav-contenedor">
+        <a class="navbar-brand text-negro" href="#">
+            <img src="img/icon_rest.ico" width="35" height="35" class="d-inline-block align-top" alt=" " loading="lazy "> <h1 class="text-negro text-negro1">  Restaurante La Cabra Asunción </h1>
         </a>
         <div class="collapse navbar-collapse justify-content-end " id="navbarNav ">
             <ul class="navbar-nav ">
                 <li class="nav-item active ">
-                    <a class="nav-link " href="# ">Inicio <span class="sr-only
+                    <a class="nav-link text-negro" href="# ">Inicio <span class="sr-only
 ">(current)</span></a>
                 </li>
-                <li class="nav-item ">
-                    <a class="nav-link " href="#aplicacion">Noticias</a>
+                <li class="nav-item  ">
+                    <a class="nav-link text-negro" href="#aplicacion">Noticias</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link " href="#services">Servicios</a>
+                    <a class="nav-link text-negro" href="#services">Servicios</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="#team">Equipo</a>
+                    <a class="nav-link text-negro" href="#team">Equipo</a>
                 </li>
             </ul>
         </div>
@@ -62,31 +62,33 @@
             <li data-target="#carouselExampleCaptions" data-slide-to="1" class=""></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="2" class=""></li>
         </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/letrero_restaurante.jpg" class="d-block w-100" alt="Restaurante" width="700" height="350">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 style="color: black;background-color: lightsalmon; font-size: large">Restaurante</h5>
-                    <p style="color: black;background-color: lightsalmon; font-size: large;">Bienvenido al restaurante
+        
+        <div class="carousel-inner carousel-contenedor">
+            
+            <div class="carousel-item h-100 active">
+                <img src="img/cabra1.jpg" class="d-block w-100 h-100" alt="Restaurante">
+                
+                <div class="carousel-caption d-none d-md-block w-100 carousel-informacion">
+                    <h5 class="text-negro">Restaurante</h5>
+                    <p class="text-negro">Bienvenido al restaurante
                         La cabra Asunción.</p>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="img/restaurante_aire.jpg" class="d-block w-100" alt="Mesas a aire libre" width="800"
-                    height="400">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 style="color: black;background-color: lightsalmon; font-size: large">Terraza</h5>
-                    <p style="color: black;background-color: lightsalmon; font-size: large">Disfrute de nuestra terraza
-                        al aire libre con zona de no fumadores</p>
+
+
+            
+            <div class="carousel-item h-100">
+                <img src="img/restaurante_aire.jpg" class="d-block w-100 h-100" alt="Restaurante">
+                <div class="carousel-caption d-none d-md-block w-100 carousel-informacion">
+                    <h5 class="text-negro">Terraza</h5>
+                    <p class="text-negro">Disfrute de nuestra terraza al aire libre con zona de no fumadores</p>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="img/restaurante_pano.jpg" class="d-block w-100" alt="Restaurante elegante" width="700"
-                    height="400">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 style="color: black;background-color: lightsalmon; font-size: large">Reservas sin costo</h5>
-                    <p style="color: black;background-color: lightsalmon; font-size: large">Reserve su mesa con
-                        anticipación sin costo adicional</p>
+            <div class="carousel-item h-100">
+                <img src="img/restaurante_pano.jpg" class="d-block w-100 h-100" alt="Restaurante">
+                <div class="carousel-caption d-none d-md-block w-100 carousel-informacion">
+                    <h5 class="text-negro">Reservas sin costo</h5>
+                    <p class="text-negro">Reserve su mesa con anticipación sin costo adicional</p>
                 </div>
             </div>
         </div>
@@ -99,6 +101,13 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+
+
+
+
+    
+
+
 
     <!-- TODO Secciones 2 y 3-->
 
@@ -137,7 +146,8 @@
 
     <!-- TODO Llamado de Vue -->
     <br>
-    <div id="app">
+      <div id="services">
+        <div id="app" >
       
     </div>
 
@@ -153,30 +163,32 @@
     <!-- TODO Sección 5: Footer -->
 
     
-    <footer class="page-footer bg-secondary text-white pt-4">
+    <footer class="page-footer text-white pt-4 footer ">
         <!-- Footer Text -->
         <div class="container-fluid text-center text-md-left">
             <!-- Grid row -->
-            <div class="row">
+            <div class="row text-negro text-tamano d-flex justify-content-around">
                 <!-- Grid column -->
-                <div class="col-md-6 mt-md-0 mt-3">
+                <div class="col-md-5 mt-md-0 mt-3  ">
                     <!-- Content -->
                     <h5 class="text-uppercase font-weight-bold">Acerca de</h5>
-                    <p>
-                        Nuestro repositorio Git Hub:
-                        <a href="https://github.com/Shelcy/semana-2-15">Repositorio</a><br />
+                    <hr>
+                    <p >
+
                         Contacto. <br />
                         Shelcy Calderón: shelcyjulianacalderon@gmail.com<br />
                         Hugo Gonzalez: huagonzalezri@hotmail.com<br />
                         Lina Quimbayo: lunaangel23@hotmail.com
                     </p>
+
                 </div>
+
                 <!-- Grid column -->
                 <hr class="clearfix w-100 d-md-none pb-3">
                 <!-- Grid column -->
-                <div class="col-md-6 mb-md-0 mb-3">
+                <div class=" col-md-5 mb-md-0 mb-3">
                     <!-- Content -->
-                    <h5 class="text-uppercase font-weight-bold">Más información</h5>
+                    <h5 class="text-uppercase font-weight-bold text-center">Más información</h5><hr>
                     <p>Para nosotros es importante este proyecto porque nos lleva un paso más cerca de la culminación
                         del curso de MisionTic 2020. Esto también nos lleva un poco más cerca de tener la capacidad de
                         cumplir con nuestras
@@ -188,7 +200,9 @@
         </div>
         <!-- Footer Text -->
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-1 bg-dark">(c) 2020 Copyright: La Cabra Asunción
+        <div class="footer-copyright text-center py-1 bg-dark">
+            <i class="fab fa-github" style="font-size:2rem;"> </i><a  class="text-center text-negro text-negro2" href="https://github.com/Shelcy/semana-2-15"> Repositorio</a> </li>
+            
         </div>
         <!-- Copyright -->
     </footer>

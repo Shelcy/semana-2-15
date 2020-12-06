@@ -1,8 +1,9 @@
 <template>
   <div id="app">
     <div class="container">
-      <div id="services">
-        <h2 class="text-center">Servicios</h2>
+      <div id="services" >
+        <br>
+        <h2 class="text-center">Servicios</h2><br>
         <div class="row d-flex align-self-start">
           <div
             class="col-sm-6 col-xs-12 col-lg-4"
@@ -72,7 +73,7 @@ export default {
           descripcion:
             "Tengo 26 años y vivo en Cali, trabajo en Restaurante la cabra Asunción hace 3 años y mi comida favorita es el pescado frito con papas fritas. !Delicioso¡",
           rol: "Repartidor de Comidas",
-          image: "./img/hugo.jpeg",
+          image: "./img/juan1.png",
         },
         {
           codigo: 5,
@@ -80,7 +81,7 @@ export default {
           descripcion:
             "Tengo 32 años y trabajo en Restaurante la cabra Asunción sede Medellin hace 1 año. Me gusta ir al pueblito paisa y mi comida favorita es el arroz con leche. ",
           rol: "Mesera",
-          image: "./img/lina.jpeg",
+          image: "./img/lisa.png",
         },
       ],
 
@@ -91,7 +92,7 @@ export default {
             "Desde ahora hasta el 31 de diciembre de 2020, compre $50.000 en tarjetas de regalo en Restaurante la cabra Asunción y reciba un certificado de bonificación de $10.000, compre $100.000 en tarjetas de regalo y reciba un certificado de bonificación de $25.000.",
           descripcion2:
             " Los certificados de bonificación la cabra Asunción son válidos en cualquier parte de Colombia del 2 de enero al 30 de abril de 2021.",
-          image: "../src/img/navidad.jpg",
+          image: "./img/navidad.jpg",
         },
         {
           nombre: "Eventos",
@@ -99,7 +100,7 @@ export default {
             "Para estas temporadas de fiestas ven con tu familia y disfruta hasta del 40% de descuento en el menú del día y no solo eso participa por el pago completo de tu cena navideña para las fechas 7, 24 y 31 de diciembre más obsequios navideños. ",
           descripcion2:
             "Promoción valida para establecimienos de la región andina y pacifica Colombiana desde el 12 de noviembre al 6 de diciembre del año 2020. ",
-          image: "../src/img/cena.jpg",
+          image: "./img/cena.jpg",
         },
         {
           nombre: "Farmlink",
@@ -107,7 +108,7 @@ export default {
             "En esta temporada navideña, estamos ayudando a apoyar a Farmlink, una organización sin fines de lucro fundada por estudiantes universitarios para enviar productos agrícolas no vendidos a los bancos de alimentos para combatir el hambre. Tu pedido tiene un impacto cuando redondeas.",
           descripcion2:
             "Acercate a cualquier Restaurante la cabra Asunción y has tu aporte de alimentos en buen estado o puedes hacer giros directamente a la fundación hasta el 12 de enero del 2020",
-          image: "../src/img/fundacion.png",
+          image: "./img/fundacion.png",
         },
       ],
     };
@@ -118,6 +119,12 @@ export default {
 <style scoped>
 .container {
   width: 95%;
+}
+
+.servicios-contenedor{
+ 
+  /* background-color: rgba(21, 20, 20, 0.337); */
+
 }
 </style>
 

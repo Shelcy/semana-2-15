@@ -7,7 +7,7 @@
       alt="Card image"
     />
     <div class="card-img-overlay">
-      <h1 class="card-titulo text-center">{{ service.nombre }}</h1>
+      <h1 class="card-titulo text-center text-primary">{{ service.nombre }}</h1>
     </div>
     <p class="card-text p-2">{{ service.descripcion }}</p>
     <div class="card-footer border-secondary">
@@ -54,4 +54,6 @@ export default {
     width: 40%;
     margin: auto;
 }
+
+
 </style>
